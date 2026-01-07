@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>台灣馬拉松報名資訊總覽</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__tag">台灣馬拉松</p>
+        <h1>報名資訊總覽</h1>
+        <p class="hero__subtitle">
+          整合多個馬拉松報名網站的賽事資訊，快速篩選地點、時間與報名狀態。
+        </p>
+      </div>
+      <div class="hero__actions">
+        <a class="button" href="https://www.irunner.com.tw/" target="_blank" rel="noreferrer">
+          iRunner
+        </a>
+        <a class="button" href="https://www.running.biji.co/" target="_blank" rel="noreferrer">
+          跑步筆記
+        </a>
+        <a class="button" href="https://www.sponet.tw/" target="_blank" rel="noreferrer">
+          SPORTNET
+        </a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="filters" aria-label="賽事篩選">
+        <div class="filter">
+          <label for="locationFilter">地點</label>
+          <select id="locationFilter">
+            <option value="all">全部</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="startDate">開始時間</label>
+          <input id="startDate" type="date" />
+        </div>
+        <div class="filter">
+          <label for="endDate">結束時間</label>
+          <input id="endDate" type="date" />
+        </div>
+        <div class="filter filter--checkbox">
+          <label>
+            <input id="openOnly" type="checkbox" />
+            只看可報名
+          </label>
+        </div>
+        <button id="resetFilters" class="button button--ghost">重設條件</button>
+      </section>
+
+      <section class="summary" aria-live="polite">
+        <p id="summaryText">載入賽事資料中…</p>
+        <p class="summary__note">
+          賽事資料由爬蟲腳本彙整，若報名狀態與官方公告不同，請以官方網站為準。
+        </p>
+      </section>
+
+      <section id="events" class="cards" aria-label="賽事列表"></section>
+    </main>
+
+    <template id="eventCardTemplate">
+      <article class="card">
+        <div class="card__header">
+          <h2 class="card__title"></h2>
+          <span class="card__status"></span>
+        </div>
+        <p class="card__meta"></p>
+        <p class="card__location"></p>
+        <p class="card__deadline"></p>
+        <div class="card__footer">
+          <a class="button button--small" target="_blank" rel="noreferrer">查看賽事</a>
+          <span class="card__source"></span>
+        </div>
+      </article>
+    </template>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>

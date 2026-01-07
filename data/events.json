@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2024-06-01T08:00:00+08:00",
+  "events": [
+    {
+      "name": "台北國際馬拉松",
+      "location": "台北市",
+      "raceDate": "2024-12-15",
+      "registrationDeadline": "2024-09-30",
+      "registrationOpen": true,
+      "website": "https://www.taipeicitymarathon.com/",
+      "source": "官方網站"
+    },
+    {
+      "name": "高雄富邦馬拉松",
+      "location": "高雄市",
+      "raceDate": "2025-01-12",
+      "registrationDeadline": "2024-10-20",
+      "registrationOpen": true,
+      "website": "https://www.kaohsiungmarathon.org/",
+      "source": "官方網站"
+    },
+    {
+      "name": "渣打臺北公益馬拉松",
+      "location": "台北市",
+      "raceDate": "2024-11-10",
+      "registrationDeadline": "2024-08-31",
+      "registrationOpen": false,
+      "website": "https://www.scbmarathon.com.tw/",
+      "source": "官方網站"
+    },
+    {
+      "name": "萬金石馬拉松",
+      "location": "新北市",
+      "raceDate": "2025-03-16",
+      "registrationDeadline": "2024-12-20",
+      "registrationOpen": true,
+      "website": "https://www.wanjinshi-marathon.com/",
+      "source": "官方網站"
+    },
+    {
+      "name": "日月潭馬拉松",
+      "location": "南投縣",
+      "raceDate": "2024-10-27",
+      "registrationDeadline": "2024-08-15",
+      "registrationOpen": false,
+      "website": "https://www.sunmoonlakemarathon.org.tw/",
+      "source": "官方網站"
+    }
+  ]
+}
